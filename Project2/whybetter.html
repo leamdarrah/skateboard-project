@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>skateboard. PROJECT.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('#hideCampus').click(function() {
+              $('td:nth-child(2),th:nth-child(2)').toggle();
+          });
+      });
+      $(document).ready(function() {
+          $('#hideMini').click(function() {
+              $('td:nth-child(3),th:nth-child(3)').toggle();
+          });
+      });
+      $(document).ready(function() {
+          $('#hideV3').click(function() {
+              $('td:nth-child(4),th:nth-child(4)').toggle();
+          });
+      });
+      $(document).ready(function() {
+          $('#hideNLS').click(function() {
+              $('td:nth-child(5),th:nth-child(5)').toggle();
+          });
+      });
+    </script>
+  </head>
+
+  <body>
+     <header>
+      <div class="navigation">
+        <ul>
+          <div class="logo-container">
+          <img src="images/logo.svg" alt="stateboard project logo" name="logo">
+          </div>
+
+          <label for="toggle" class="navigation-label">&#9776;</label>
+          <input type="checkbox" id="toggle"/>
+
+          <div class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="whybetter.html">Comparison</a></li>
+            <li><a href="about.html">About our products</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </div>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- insert body content -->
+      <div class="contain">
+      <h2 class="title">Comparison Table</h2>
+
+      <p class="desc">Check and un-check boxes to compare desired models of board</p>
+      
+      <div class="buttons">
+
+      <label class="boxer">Campus 2
+        <input id="hideCampus" type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+      <label class="boxer">Mini 2
+        <input id="hideMini" type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+      <label class="boxer">V3
+        <input id="hideV3" type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+      <label class="boxer">NLS Pro
+        <input id="hideNLS" type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+
+      </div>
+
+      <div style="overflow-x:auto;">
+      <table>
+        <tr>
+          <th>Model</th>
+        <!-- This is the list of skateboards-->
+          <th>Meepo Campus 2</th>
+          <th>Meepo Mini 2</th>
+          <th>Meepo V3</th>
+          <th>Meepo NLS Pro</th>
+        </tr>
+        <!-- Sample text is the features that are listed -->
+        <tr>
+          <td>Cost</td>
+          <td>$299</td>
+          <td>$429</td>
+          <td>$398</td>
+          <td>$651</td>
+        </tr>
+        <tr>
+          <td>Length</td>
+          <td>31"</td>
+          <td>30"</td>
+          <td>38"</td>
+          <td>38"</td>
+        </tr>
+        <tr>
+          <td>Weight</td>
+          <td>12.5 lbs</td>
+          <td>16 lbs</td>
+          <td>16 lbs</td>
+          <td>18.7 lbs</td>
+        </tr>
+        <tr>
+          <td>Weight Limit</td>
+          <td>150 lbs</td>
+          <td>300 lbs</td>
+          <td>300 lbs</td>
+          <td>300 lbs</td>
+        </tr>
+        <tr>
+          <td>Top Speed</td>
+          <td>18 mph</td>
+          <td>29 mph</td>
+          <td>28 mph</td>
+          <td>29 mph</td>
+        </tr>
+        <tr>
+          <td>Range</td>
+          <td>10 miles</td>
+          <td>11 miles</td>
+          <td>11 miles</td>
+          <td>20 miles</td>
+        </tr>
+        <tr>
+          <td>Motors</td>
+          <td>1 x 350W</td>
+          <td>2 x 540W</td>
+          <td>2 x 540W</td>
+          <td>2 x 540W</td>
+        </tr>
+        <tr>
+          <td>Wheels</td>
+          <td>83mm x 52mm</td>
+          <td>90mm x 60mm</td>
+          <td>90mm x 60mm</td>
+          <td>100mm x 58mm</td>
+        </tr>
+        <tr>
+          <td>Hill Climb</td>
+          <td>10%</td>
+          <td>30%</td>
+          <td>30%</td>
+          <td>30%</td>
+        </tr>
+        <tr>
+          <td>Use Case</td>
+          <td>Cheapest entry option ideal for short commutes or beginners to electric skateboarding</td>
+          <td>High powered portable option ideal for someone who needs to easily transport or store the board, or those with skateboarding experience</td>
+          <td>Best bang for buck full-size electric longboard ideal for those who want a more comfortable ride and want the best overall deal</td>
+          <td>Ultimate comfort ride option ideal for those who will use the board for frequent commutes and want the highest quality product</td>
+        </tr>
+      </table>
+    </div>
+    </main>
+
+    <footer>
+      <!-- insert footer content -->
+    </footer>
+  </body>
+</html>
